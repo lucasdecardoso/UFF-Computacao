@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PakiMemo</title>
+        <link rel="stylesheet" href="estilos/style.css">
+        <style>
+            #loginCad
+            {
+                width: 260px;
+            }
+            #idEmail
+            {
+                width: 160px;
+            }
+            #senhaCad
+            {
+                width: 180px;
+            }
+            #lisSelProd
+            {
+                width: 370px;
+            }
+            #selProduto
+            {
+                width: 75%;
+            }
+            #btnIncluir
+            {
+                width: 70px;
+            }
+            #boxPedidos
+            {
+                height: 100px;
+            }
+            #lisPedArea
+            {
+                height: 90%;
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            #fsBandeira
+            {
+                height: 80px;
+                text-align: left;
+                width: auto;
+            }
+            #numCartao
+            {
+                width: 350px;
+                height: 35px;
+                padding-top: 10px;
+            }
+            #valCartao
+            {
+                width: 230px;
+                height: 35px;
+            }
+            #boxParcel
+            {
+                width: 230px;
+                height: 30px;
+                clear: both;
+            }
+        </style>
+        
+    </head>    
+    <body>
+        <header>
+            
+            <adress class="ender" >
+                Rua do Paço do Elefantinho, 123<br>
+                (21) 4321-5678<br>
+                contato@paquiderme.com.br											
+            </adress>
+            <img class="imgLogo" src="Imagens/PakiLogoTopo.png" alt="">
+            
+        </header>
+        <nav>
+            <ul>
+                <li><a HREF="../PakiMemo/index.html" target="_blank"> INICIO</a></li>
+                <li><a HREF="../PakiMemo/Memorias.html"target="_blank">MEMORIAS</a></li>             
+                <li><a HREF="../PakiMemo/Discos.html"target="_blank">HDs / SSDs</a></li>           
+                <li><a HREF="../PakiMemo/Cadastro.html"target="_blank">CADASTRO</a></li>
+                <li><a HREF="../PakiMemo/Compras.html"target="_blank">COMPRAS</a></li>
+            </ul>                  
+        </nav>
+        <section>
+            <form class="FormBox">
+                <div>
+                    <h3>Compras</h3>
+                </div>
+<!--___________________________________IDENTIFICAÇÃO____________________________________________________-->
+                <fieldset class="FSLinhaInteira">
+                    <legend>Identificação</legend>  
+                    <div class="LinhaForm, ColEsq" id="loginCad">
+                        <label class="LabBox">E-mail:</label>
+                        <input class="InpBoxGnd" id="idEmail" type="email" name="Email" placeholder="Digite seu e-mail">
+                    </div>
+                    
+                    <div class="LinhaForm, ColDir" id="senhaCad"> 
+                        <label class="LabBox">Senha:</label>
+                        <input class="InpBoxMed" type="password" name="Senha:">
+                    </div>
+                    <br>
+                    <p>Se você ainda não tem cadastro <i>clique<a HREF="../Questao6/Cadastro.html"target="_blank"> aqui</a></i>!</p>
+                </fieldset>
+<!--___________________________________IDENTIFICAÇÃO____________________________________________________-->
+<!--___________________________________Lista de Compras____________________________________________________-->
+                <fieldset class="FSLinhaInteira">
+                    <legend>Lista de Compras</legend>
+                    <div class="LinhaForm, ColEsq" id="lisSelProd">
+                        <label class="LabBox">Produtos:</label>
+                        <select name="ListaProdutos" id="selProduto">
+                            <option selected>-----</option>
+                            <optgroup label="Memoria DDR3"></optgroup>
+                                <option>&emsp;Kingston 4gb</option>
+                                <option>&emsp;Samsung 8Gb</option>
+                            <optgroup label="Memoria DDR4"></optgroup>
+                                <option>&emsp;Kingston Fury 8Gb</option>
+                                <option>&emsp;Corsair Vengeance 8Gb</option>
+                            <optgroup label="HD Sata III"></optgroup>
+                                <option>&emsp;Western Digital 500Gb</option>
+                                <option>&emsp;Seagate 1Tb</option>
+                            <optgroup label="SSD Sata III"></optgroup>
+                                <option>&emsp;Samdisk 480Gb</option>
+                                <option>&emsp;Kingston 960Gb</option>
+                            <optgroup label="SSD M2"></optgroup>
+                                <option>&emsp;Kingston 500Gb</option>
+                                <option>&emsp;Western Digital 240Gb</option>                      
+                        </select>
+                    </div>
+                    <div  class="LinhaForm, ColDir" id="btnIncluir">
+                        <INPUT TYPE="button" name="ProdutosInclusos" VALUE="Incluir">
+                    </div>
+                    <div class="LinhaForm" id="boxPedidos">
+                        <textarea class="InpBoxGnd" id="lisPedArea" NAME="produtos" readonly></textarea>
+                    </div>
+                    <div class="LinhaForm, ColDir">
+                        <label class="LabBox"> Valor: R$</label>
+                        <input class="InpBoxMed" type="number" name="valor" readonly>
+                    </div>
+
+                </fieldset>
+<!--___________________________________Lista de Compras____________________________________________________-->
+<!--___________________________________Dados do Cartão____________________________________________________-->
+                <fieldset class="FSLinhaInteira">
+                    <legend>Dados do Cartão</legend>
+                        <div class="ColEsq">   
+                            <div class="LinhaForm, ColEsq" id="numCartao">
+                                <label class="LabBox">Número:</label>
+                                <input class="numDD" type="text" name="digitos1" maxlength="4"/>
+                                <input class="numDD" type="text" name="digitos2"maxlength="4"/>
+                                <input class="numDD" type="text" name="digitos3"maxlength="4"/>
+                                <input class="numDD" type="text" name="digitos4"maxlength="4"/>
+                            </div>
+                            <div class="LinhaForm, ColEsq" id="valCartao">
+                                <label class="LabBox">Validade:</label>
+                                <input class="numDD" type="number" name="mesValidade" min="1" max="12" step="1" value="1"/> /
+                                <input class="numQD" type="number" name="anoValidade" min="2022" max="2040" step="1" value="2022"/>
+                            </div>
+                            <div class="LinhaForm, ColEsq" id="boxParcel">
+                                <label class="LabBox">Parcelas:</label>
+                                <input class="numDD" type="number" name="parcelas" min="1" max="12" value="1"/> x Sem Juros
+                            </div>
+                        </div>
+                         
+                    <fieldset class="FSColDir" id="fsBandeira">
+                            <legend>Bandeira:</legend>
+                            <div>
+                                <INPUT TYPE=radio NAME ="bandeiraCartao" VALUE ="Visa" checked><label>Visa</label><br>
+                                <INPUT TYPE=radio NAME ="bandeiraCartao" VALUE ="Master"><label>Master</label><br>
+                                <INPUT TYPE=radio NAME ="bandeiraCartao" VALUE ="Elo"><label>Elo</label>
+                            </div>
+                        
+
+                    </fieldset>
+                </fieldset>
+<!--___________________________________Dados do Cartão____________________________________________________-->
+                <div class="botoes">
+                    <INPUT TYPE="SUBMIT" VALUE="Confirmar">
+                    <INPUT TYPE="RESET" VALUE="Limpar">
+                </div>
+
+            </form>
+
+        </section>
+        
+    </body>
+
+
+
+
+</html>

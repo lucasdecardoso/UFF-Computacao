@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Rubik:wght@300&display=swap');
+
+
+body
+{
+    background-color: #116688;
+    font-size: 16px;
+    color:#EEEE22;
+    
+}
+
+header
+{
+    display: block; margin-bottom: 1px;
+}
+nav
+{
+    display: block; width: 18%; float: left;    
+    margin-right: 10px;
+    font-family: 'Rubik', Verdana, sans-serif;
+}
+
+section
+{
+    display: block; width: 70%; float: right;
+
+}
+
+.ender
+{
+    text-align: right;
+    font-size: 14px;
+    line-height: 140%;
+    float: right;
+    font-family: 'Lora', Georgia, serif;
+}
+
+.imgLogo
+{
+    border-bottom-style: solid;
+    border-bottom-width: 3px;    
+    margin-bottom: 4px;
+    padding-bottom: 5px;
+ 
+}
+
+.apres
+{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Lora', Georgia, serif;
+
+}
+a:link
+{
+    color: #FFFF22; text-decoration: none;
+
+}
+a:visited
+{
+    color:#DDDD22;
+}
+ul
+{
+    color: #EEEE22;
+    line-height: 230%;
+    margin-top: 40px;
+    list-style-type:square;
+}
+
+.ul2
+{
+    color: #114455;
+    list-style-type: disc;
+    white-space: nowrap;
+}
+
+.listaMemo
+{
+    width: 340px;
+    color: #AA0000;
+    background-color: #EEEEEE;
+    padding: 10px 10px 10px 50px;
+    border: solid;
+    border-width: 4px;
+    border-color: #000055;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: 'Rubik', Verdana, sans-serif;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: decimal;
+}
+
+
+h3
+{
+    text-align: center;
+}
+
+.preco
+{
+    color: #EE0000;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.tabDisco
+{
+    border: solid;
+    border-collapse: collapse;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    color: #000066;
+    font-family: 'Rubik', Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    
+    
+}
+
+td, th
+{
+    border: solid 3px;
+    border-color: #226699;
+    padding: 6px 12px 6px 12px;
+    
+}
+
+.titulo
+{
+    color: #FFFF00;
+    background-color: #229955;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+.linTH
+{
+    color: #FFFFFF;
+    background-color: #22BB66;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.colTH
+{
+    color: #FFFFFF;
+    background-color: #2299DD;
+    text-align: left;
+}
+
+.imgDisco
+{
+    max-width: 70px;
+    max-height: 70px;
+}
+
+
+.FormBox
+{
+    width: 520px;
+    background: #33BBBB;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    border: 3px solid #EEEE22;
+}
+
+/*fieldsets*/
+.FSLinhaInteira
+{
+    color: white;
+    width: 490px;
+    text-align: left;
+
+}
+.FSColEsq
+{
+    width: 210px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+.FSColDir
+{
+    width: 210px;
+    text-align: center;
+    float: right;
+    color: white;
+}
+
+/* boxes internos*/
+.LinhaForm
+{
+    margin: 0px;
+    height: 30px;
+    padding: 6px 3px 0px 3px;
+}
+
+.ColEsq
+{
+    width: 180px;
+    float: left;
+    display: block;
+    
+    
+}
+
+.ColDir
+{
+    width: 180px;
+    float: right;
+    display: block;
+}
+
+.LabBox
+{
+    width: 80px;
+    float: left;
+    display: block;
+}
+
+.botoes
+{
+    text-align: right;
+    margin: 20px 10px 0px 10px;
+}
+
+/*tamanho de elementos de entrada de valores*/
+.InpBoxGnd
+{
+    width: 384px;
+    float: right;
+    display: block;
+}
+
+.InpBoxMed
+{
+    width: 80px;
+    float: right;
+    display: block;
+}
+
+.numDD
+{
+ width: 35px;
+}
+
+.numQD
+{
+    width: 50px;
+}
+
+legend
+{
+    text-align: left;
+}
+
+
+input[name="sex"] 
+{
+	accent-color: rgb(255, 72, 0);
+}
+input[name="bandeiraCartao"] 
+{
+	accent-color: rgb(255, 72, 0);
+}
+
+

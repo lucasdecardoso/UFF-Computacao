@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PakiMemo</title>
+        <link rel="stylesheet" href="estilos/style.css">
+        
+        <style>
+        
+        #linhaEnder
+        {
+            height: 50px;
+        }
+        
+        #inpEnder
+        {
+            width: 384px;
+            height: 80%;
+        }          
+        </style>
+        
+    </head>    
+    <body>
+        <header>
+            
+            <adress class="ender" >
+                Rua do Paço do Elefantinho, 123<br>
+                (21) 4321-5678<br>
+                contato@paquiderme.com.br											
+            </adress>
+            <img class="imgLogo" src="Imagens/PakiLogoTopo.png" alt="">
+            
+        </header>
+        <nav>
+            <ul>
+                <li><a HREF="../PakiMemo/index.html" target="_blank"> INICIO</a></li>
+                <li><a HREF="../PakiMemo/Memorias.html"target="_blank">MEMORIAS</a></li>             
+                <li><a HREF="../PakiMemo/Discos.html"target="_blank">HDs / SSDs</a></li>           
+                <li><a HREF="../PakiMemo/Cadastro.html"target="_blank">CADASTRO</a></li>
+                <li><a HREF="../PakiMemo/Compras.html"target="_blank">COMPRAS</a></li>
+            </ul>                  
+        </nav>
+        <section>
+            <form class="FormBox">
+                <div>
+                    <h3>Cadastro</h3>
+                </div>
+<!--___________________________________IDENTIFICAÇÃO____________________________________________________-->
+                <fieldset class="FSLinhaInteira">
+                    <legend>Identificação</legend> 
+                    <div class="LinhaForm">
+                        <label class="LabBox">E-mail:</label>
+                        <input class="InpBoxGnd" type="email" NAME="Email:" placeholder="Digite seu e-mail">
+                    </div>
+
+                    <div class="LinhaForm, ColEsq">
+                        <label class="LabBox">Senha:</label>
+                        <input class="InpBoxMed" type="password" name="Senha:">
+                    </div>
+
+                    <div class="LinhaForm, ColDir">
+                        <label class="LabBox">Confirme:</label>
+                        <input class="InpBoxMed" type="password" name="Confirme:">
+                    </div>                    
+                </fieldset>
+<!--___________________________________Dados Pessoais____________________________________________________-->
+                <fieldset class="FSLinhaInteira">
+                    <legend>Dados Pessoais</legend>
+                    <div class="LinhaForm">
+                        <label class="LabBox">Nome:</label>
+                        <INPUT class="InpBoxGnd" type="text" NAME="Nome:" placeholder="Digite seu nome">
+                    </div>
+                    <div class="LinhaForm" id="linhaEnder"> 
+                        <label class="LabBox">Endereço:</label>
+                        <textarea class="InpBoxGnd" id="inpEnder" NAME="Endereço:"></textarea>
+                    </div>
+                    <div class="LinhaForm, ColEsq">
+                        <label class="LabBox">Telefone:</label>
+                        <input class="InpBoxMed" type="tel" name="Telefone:" maxlength="10">
+                    </div>
+                    <div class="LinhaForm, ColDir">
+                        <label class="LabBox">Celular:</label>
+                        <input class="InpBoxMed" type="tel" name="Celular:" maxlength="11">
+                    </div>
+
+                        <fieldset class="FSColEsq">
+                            <legend>Nascimento:</legend>
+                                <div class="LinhaForm">
+                                    <input class="numDD" type="number" name="Dia:" min="1" max="31" step="1"/> /
+                                    <input class="numDD" type="number" name="Mes:" min="1" max="12" step="1"/> /
+                                    <input class="numQD" type="number" name="Ano:" min="1980" max="2022" step="1" value="1980"/>
+                                </div>
+                        </fieldset>
+                        <fieldset class="FSColDir">
+                            <legend>Sexo:</legend>
+                            <div class="LinhaForm">
+                                <input TYPE=radio name ="sex" VALUE ="M">Mas
+                                <input TYPE=radio name ="sex" VALUE ="F">Fem
+                                <input TYPE=radio name ="sex" VALUE ="Outro" checked>Outro</p>
+                            </div>
+                        </fieldset>
+                </fieldset>
+
+                <div class="botoes"><input TYPE="SUBMIT" VALUE="Cadastrar">
+                <input TYPE="RESET" VALUE="Limpar"></div>
+                
+            </form>            
+        </section>
+        
+    </body>
+    
+</html>
