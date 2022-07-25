@@ -1,3 +1,3 @@
-# :yellow_circle: UFF-Computacao
+# :yellow_circle: UFF-Computação
 
 Trabalhos do curso de Computação da Universidade Federal Fluminense
